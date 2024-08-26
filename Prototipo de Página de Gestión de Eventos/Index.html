@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>TicketMaster - Tu portal de eventos</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f0f0f0;
+                }
+                header {
+                    background-color: #333;
+                    color: white;
+                    padding: 1rem;
+                    text-align: center;
+                }
+                nav {
+                    background-color: #444;
+                    padding: 0.5rem;
+                }
+                nav a {
+                    color: white;
+                    text-decoration: none;
+                    padding: 0.5rem;
+                    margin: 0 0.5rem;
+                }
+                main {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 2rem;
+                }
+                .event-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                    gap: 1rem;
+                }
+                .event-card {
+                    background-color: white;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                }
+                .event-card img {
+                    width: 100%;
+                    height: 150px;
+                    object-fit: cover;
+                }
+                .event-info {
+                    padding: 1rem;
+                }
+                footer {
+                    background-color: #333;
+                    color: white;
+                    text-align: center;
+                    padding: 1rem;
+                    margin-top: 2rem;
+                }
+            </style>
+        </head>
+        <body>
+            <header>
+                <div class="logo-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+                      <rect x="10" y="10" width="180" height="80" rx="10" ry="10" fill="#333333"/>
+                      <text x="100" y="50" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle" dominant-baseline="middle">TicketMaster</text>
+                      <path d="M30 70 L50 70 L55 60 L60 70 L65 60 L70 70 L75 60 L80 70 L85 60 L90 70" stroke="white" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
+                <h1>Tu portal de eventos</h1>
+            </header>
+            <nav>
+                <a href="#">Conciertos</a>
+                <a href="#">Espectáculos</a>
+                <a href="#">Deportes</a>
+                <a href="#">Congresos</a>
+                <a href="#">Teatro</a>
+            </nav>
+            <main>
+                <h2>Eventos Destacados</h2>
+                <div class="event-grid">
+                    <div class="event-card">
+                        <img src="/api/placeholder/250/150" alt="Concierto de rock">
+                        <div class="event-info">
+                            <h3>Concierto de Rock</h3>
+                            <p>Fecha: 15 de septiembre</p>
+                            <p>Lugar: Estadio Nacional</p>
+                            <button>Comprar Tickets</button>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="/api/placeholder/250/150" alt="Obra de teatro">
+                        <div class="event-info">
+                            <h3>Romeo y Julieta</h3>
+                            <p>Fecha: 22 de octubre</p>
+                            <p>Lugar: Teatro Municipal</p>
+                            <button>Comprar Tickets</button>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="/api/placeholder/250/150" alt="Partido de fútbol">
+                        <div class="event-info">
+                            <h3>Final de Copa</h3>
+                            <p>Fecha: 5 de noviembre</p>
+                            <p>Lugar: Estadio Olímpico</p>
+                            <button>Comprar Tickets</button>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="/api/placeholder/250/150" alt="Congreso de tecnología">
+                        <div class="event-info">
+                            <h3>TechCon 2024</h3>
+                            <p>Fecha: 10-12 de diciembre</p>
+                            <p>Lugar: Centro de Convenciones</p>
+                            <button>Comprar Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <p>&copy; 2024 TicketMaster. Todos los derechos reservados.</p>
+            </footer>
+        </body>
+    </html>
